@@ -31,7 +31,7 @@ function vacation(date) {
 
     // Шаг 5: Получаем день и месяц на следующий день после отпуска
     const nextDay = currentDate.getDate();
-    const nextMonth = currentDate.getMonth() + 1; // Месяцы в объекте Date начинаются с 0
+    const nextMonth = currentDate.getMonth() + 1;
 
     // Шаг 6: Формируем строку с датой
     let result = "";
