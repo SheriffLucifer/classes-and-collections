@@ -16,22 +16,23 @@
  * @param {number} y - станция высадки
  * @returns {number}
  */
+
 function metro(x, y) {
     const totalStations = 13;
 
     // Шаг 1: Находим абсолютное значение разницы между станциями посадки и высадки
-    let minIntermediateStations = Math.abs(x - y);
+    let minNumberOfGaps = Math.abs(x - y);
 
     // Шаг 2: Проверяем, находится ли станция высадки ближе к станции посадки чем половина общего числа станций
-    if (minIntermediateStations <= totalStations / 2) {
+    if (minNumberOfGaps <= totalStations / 2) {
         // Шаг 3: Если да, уменьшаем количество промежуточных станций на 1
-        minIntermediateStations = minIntermediateStations - 1;
+        minNumberOfGaps = minNumberOfGaps - 1;
     } else {
         // Шаг 4: Если нет, пересчитываем количество промежуточных станций в обратном направлении
-        minIntermediateStations = totalStations - minIntermediateStations - 1;
+        minNumberOfGaps = totalStations - minNumberOfGaps - 1;
     }
 
-    return minIntermediateStations;
+    return minNumberOfGaps;
 }
 
 module.exports = metro;

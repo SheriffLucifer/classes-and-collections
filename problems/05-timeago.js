@@ -14,6 +14,7 @@
  * @param {number} seconds
  * @returns {string}
  */
+
 function timeago(seconds) {
     if (seconds >= 0 && seconds <= 9) {
         return "just now";

@@ -13,6 +13,7 @@
  * @param {string} color
  * @returns {string}
  */
+
 function hexToRgb(color) {
     // Удаляем символ # из начала строки, если он присутствует
     color = color.replace("#", "");

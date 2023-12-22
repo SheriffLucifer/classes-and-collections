@@ -15,6 +15,7 @@
  * @param {string} value
  * @returns {boolean}
  */
+
 function parentheses(value) {
     if (value === "") {
         return false;
