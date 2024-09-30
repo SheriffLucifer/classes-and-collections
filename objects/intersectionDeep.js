@@ -11,7 +11,7 @@ const intersectionDeep = (firstObject, secondObject) => {
     const result = {};
 
     // Проверяем, что secondObject не является undefined или null
-    if (secondObject === undefined || secondObject === null) {
+    if (!secondObject) {
         return result;
     }
 

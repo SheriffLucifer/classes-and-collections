@@ -8,19 +8,16 @@
 class MyString {
     reverse(str) {
         if (!str) return str;
-        if (str.length === 0) return "";
         return str.split("").reverse().join("");
     }
 
     ucFirst(str) {
         if (!str) return str;
-        if (str.length === 0) return "";
         return str.trim().charAt(0).toUpperCase() + str.trim().slice(1);
     }
 
     ucWords(str) {
         if (!str) return str;
-        if (str.length === 0) return "";
         return str
             .trimLeft()
             .split(/\s+/)

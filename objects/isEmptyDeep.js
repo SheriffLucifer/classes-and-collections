@@ -20,11 +20,7 @@ const isEmptyDeep = (object) => {
                 if (!isEmptyDeep(object[key])) {
                     return false; // Если вложенный объект не пуст, возвращаем false
                 }
-            } else if (
-                object[key] !== undefined &&
-                object[key] !== "" &&
-                object[key] !== null
-            ) {
+            } else if (object[key]) {
                 return false;
             }
         }
